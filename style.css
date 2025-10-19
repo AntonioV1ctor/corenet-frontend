@@ -1,0 +1,102 @@
+@import "reset.css";
+
+:root{
+    --default-background-color: #2a285e;
+    --default-background-color2: aliceblue;
+    --default-text-color: rgb(252, 249, 234);
+    --default-navbar-color: rgb(233, 182, 59);
+    --default-container-color: grey;
+    --default-container-color2: rgb(233, 182, 59);
+    --default-shadow-color: rgba(0, 0, 0, 0.62);
+}
+
+
+body{
+    background-color: var(--default-background-color);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+}
+
+.corenet-home-navbar-1{
+    height: 45px;
+    width: 99.2%;
+    background-color: var(--default-navbar-color);
+    border: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+*{
+   font-family: "Jersey 10", sans-serif;
+   font-weight: 400;
+}
+
+
+.corenet-home-div-1,.corenet-home-div-2{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 2px  solid #000000;
+    color: var(--default-text-color);
+    background-color: var(--default-container-color2);
+    box-shadow: 5px 3px 2px var(--default-shadow-color);
+    transition: 0.2s;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: justify;
+    padding: 10px;
+    &&:hover{
+        scale: 101%;
+    }
+}
+
+
+.corente-home-hr-1{
+    width: 95%;
+}
+
+.corenet-home-img-1{
+    width: 210px;
+}
+
+.corenet-home-box-1{
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.corenet-home-box-2{
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.corenet-home-box-3{
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.corenet-home-h1-1{
+    font-size: 35px;
+}
+
+.corente-home-p-1{
+    font-size: 19px;
+}
