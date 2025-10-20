@@ -1,1 +1,1 @@
-{:browser-repl true, :main corenet_frontend.core, :output-to "out/main.js", :output-dir "out", :aot-cache true}
+{:browser-repl true, :main corenet-frontend.core, :output-to "out/main.js", :output-dir "out", :aot-cache true}

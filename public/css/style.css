@@ -17,10 +17,12 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 92vh;
     width: 100%;
+    background-color: yellow;
+    
 }
 
 .corenet-home-navbar-1{
@@ -57,6 +59,31 @@ main{
     &&:hover{
         scale: 101%;
     }
+}
+
+.corenet-home-div-navbar-1{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 2px  solid #000000;
+    color: var(--default-text-color);
+    background-color: var(--default-container-color2);
+    /* box-shadow: 5px 3px 2px var(--default-shadow-color); */
+    transition: 0.2s;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: justify;
+    padding: 10px;
+    font-family: "Jersey 10", sans-serif;
+    &&:hover{
+        scale: 101%;
+    }
+}
+
+.corenet-home-link-blank-1{
+    text-decoration: none;
+    scale: 101%;
 }
 
 
@@ -99,4 +126,14 @@ main{
 
 .corente-home-p-1{
     font-size: 19px;
+}
+
+.corenet-home-box-2{
+    background-color: brown;
+}
+
+.vertical-line {
+  height: 500px;
+  border-left: 2px solid var(--default-background-color2);
+  
 }
