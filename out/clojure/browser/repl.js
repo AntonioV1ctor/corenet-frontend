@@ -50,9 +50,9 @@ count__1630_1634 = G__1639;
 i__1631_1635 = G__1640;
 continue;
 } else {
-var temp__5825__auto___1641 = cljs.core.seq.call(null,seq__1628_1632);
-if(temp__5825__auto___1641){
-var seq__1628_1642__$1 = temp__5825__auto___1641;
+var temp__5823__auto___1641 = cljs.core.seq.call(null,seq__1628_1632);
+if(temp__5823__auto___1641){
+var seq__1628_1642__$1 = temp__5823__auto___1641;
 if(cljs.core.chunked_seq_QMARK_.call(null,seq__1628_1642__$1)){
 var c__5548__auto___1643 = cljs.core.chunk_first.call(null,seq__1628_1642__$1);
 var G__1644 = cljs.core.chunk_rest.call(null,seq__1628_1642__$1);
@@ -180,9 +180,9 @@ return cljs.core.pr_str.call(null,new cljs.core.PersistentArrayMap(null, 4, [new
  *   embedded iframe.
  */
 clojure.browser.repl.start_evaluator = (function clojure$browser$repl$start_evaluator(url){
-var temp__5823__auto__ = clojure.browser.net.xpc_connection.call(null);
-if(cljs.core.truth_(temp__5823__auto__)){
-var repl_connection = temp__5823__auto__;
+var temp__5821__auto__ = clojure.browser.net.xpc_connection.call(null);
+if(cljs.core.truth_(temp__5821__auto__)){
+var repl_connection = temp__5821__auto__;
 var connection = clojure.browser.net.xhr_connection.call(null);
 var repl_connected_QMARK_ = cljs.core.atom.call(null,false);
 var try_handshake = (function clojure$browser$repl$start_evaluator_$_try_handshake(){

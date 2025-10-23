@@ -1,2 +1,4 @@
 {:deps
- {org.clojure/clojurescript {:mvn/version "1.12.42"}}}
+ {org.clojure/clojurescript {:mvn/version "1.12.42"}
+ lambdaisland/fetch {:mvn/version "1.5.83"}
+ cljs-ajax/cljs-ajax {:mvn/version "0.8.4"}}}

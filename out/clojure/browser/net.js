@@ -565,9 +565,9 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 });
 
 (clojure.browser.net.xpc_connection.cljs$core$IFn$_invoke$arity$0 = (function (){
-var temp__5825__auto__ = (new goog.Uri(window.location.href)).getParameterValue("xpc");
-if(cljs.core.truth_(temp__5825__auto__)){
-var config = temp__5825__auto__;
+var temp__5823__auto__ = (new goog.Uri(window.location.href)).getParameterValue("xpc");
+if(cljs.core.truth_(temp__5823__auto__)){
+var config = temp__5823__auto__;
 return (new goog.net.xpc.CrossPageChannel(goog.json.parse(config)));
 } else {
 return null;
@@ -579,9 +579,9 @@ return (new goog.net.xpc.CrossPageChannel(cljs.core.reduce.call(null,(function (
 var vec__583 = p__582;
 var k = cljs.core.nth.call(null,vec__583,(0),null);
 var v = cljs.core.nth.call(null,vec__583,(1),null);
-var temp__5823__auto__ = cljs.core.get.call(null,clojure.browser.net.xpc_config_fields,k);
-if(cljs.core.truth_(temp__5823__auto__)){
-var field = temp__5823__auto__;
+var temp__5821__auto__ = cljs.core.get.call(null,clojure.browser.net.xpc_config_fields,k);
+if(cljs.core.truth_(temp__5821__auto__)){
+var field = temp__5821__auto__;
 var G__586 = sum;
 clojure.browser.net.goog$module$goog$object.set.call(null,G__586,field,v);
 

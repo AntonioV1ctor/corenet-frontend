@@ -16,9 +16,9 @@ cljs.core.println.call(null,(function (){var or__5025__auto__ = new cljs.core.Ke
 if(cljs.core.truth_(or__5025__auto__)){
 return or__5025__auto__;
 } else {
-return [(function (){var temp__5825__auto__ = new cljs.core.Keyword(null,"ns","ns",441598760).cljs$core$IFn$_invoke$arity$1(m);
-if(cljs.core.truth_(temp__5825__auto__)){
-var ns = temp__5825__auto__;
+return [(function (){var temp__5823__auto__ = new cljs.core.Keyword(null,"ns","ns",441598760).cljs$core$IFn$_invoke$arity$1(m);
+if(cljs.core.truth_(temp__5823__auto__)){
+var ns = temp__5823__auto__;
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(ns),"/"].join('');
 } else {
 return null;
@@ -53,9 +53,9 @@ count__1490_1518 = G__1523;
 i__1491_1519 = G__1524;
 continue;
 } else {
-var temp__5825__auto___1525 = cljs.core.seq.call(null,seq__1488_1516);
-if(temp__5825__auto___1525){
-var seq__1488_1526__$1 = temp__5825__auto___1525;
+var temp__5823__auto___1525 = cljs.core.seq.call(null,seq__1488_1516);
+if(temp__5823__auto___1525){
+var seq__1488_1526__$1 = temp__5823__auto___1525;
 if(cljs.core.chunked_seq_QMARK_.call(null,seq__1488_1526__$1)){
 var c__5548__auto___1527 = cljs.core.chunk_first.call(null,seq__1488_1526__$1);
 var G__1528 = cljs.core.chunk_rest.call(null,seq__1488_1526__$1);
@@ -172,9 +172,9 @@ count__1494_1540 = G__1550;
 i__1495_1541 = G__1551;
 continue;
 } else {
-var temp__5825__auto___1552 = cljs.core.seq.call(null,seq__1492_1538);
-if(temp__5825__auto___1552){
-var seq__1492_1553__$1 = temp__5825__auto___1552;
+var temp__5823__auto___1552 = cljs.core.seq.call(null,seq__1492_1538);
+if(temp__5823__auto___1552){
+var seq__1492_1553__$1 = temp__5823__auto___1552;
 if(cljs.core.chunked_seq_QMARK_.call(null,seq__1492_1553__$1)){
 var c__5548__auto___1554 = cljs.core.chunk_first.call(null,seq__1492_1553__$1);
 var G__1555 = cljs.core.chunk_rest.call(null,seq__1492_1553__$1);
@@ -224,9 +224,9 @@ break;
 }
 
 if(cljs.core.truth_(n)){
-var temp__5825__auto__ = cljs.spec.alpha.get_spec.call(null,cljs.core.symbol.call(null,cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.ns_name.call(null,n)),cljs.core.name.call(null,nm)));
-if(cljs.core.truth_(temp__5825__auto__)){
-var fnspec = temp__5825__auto__;
+var temp__5823__auto__ = cljs.spec.alpha.get_spec.call(null,cljs.core.symbol.call(null,cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.ns_name.call(null,n)),cljs.core.name.call(null,nm)));
+if(cljs.core.truth_(temp__5823__auto__)){
+var fnspec = temp__5823__auto__;
 cljs.core.print.call(null,"Spec");
 
 var seq__1512 = cljs.core.seq.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"args","args",1315556576),new cljs.core.Keyword(null,"ret","ret",-468222814),new cljs.core.Keyword(null,"fn","fn",-1175266204)], null));
@@ -236,9 +236,9 @@ var i__1515 = (0);
 while(true){
 if((i__1515 < count__1514)){
 var role = cljs.core._nth.call(null,chunk__1513,i__1515);
-var temp__5825__auto___1569__$1 = cljs.core.get.call(null,fnspec,role);
-if(cljs.core.truth_(temp__5825__auto___1569__$1)){
-var spec_1570 = temp__5825__auto___1569__$1;
+var temp__5823__auto___1569__$1 = cljs.core.get.call(null,fnspec,role);
+if(cljs.core.truth_(temp__5823__auto___1569__$1)){
+var spec_1570 = temp__5823__auto___1569__$1;
 cljs.core.print.call(null,["\n ",cljs.core.name.call(null,role),":"].join(''),cljs.spec.alpha.describe.call(null,spec_1570));
 } else {
 }
@@ -254,9 +254,9 @@ count__1514 = G__1573;
 i__1515 = G__1574;
 continue;
 } else {
-var temp__5825__auto____$1 = cljs.core.seq.call(null,seq__1512);
-if(temp__5825__auto____$1){
-var seq__1512__$1 = temp__5825__auto____$1;
+var temp__5823__auto____$1 = cljs.core.seq.call(null,seq__1512);
+if(temp__5823__auto____$1){
+var seq__1512__$1 = temp__5823__auto____$1;
 if(cljs.core.chunked_seq_QMARK_.call(null,seq__1512__$1)){
 var c__5548__auto__ = cljs.core.chunk_first.call(null,seq__1512__$1);
 var G__1575 = cljs.core.chunk_rest.call(null,seq__1512__$1);
@@ -270,9 +270,9 @@ i__1515 = G__1578;
 continue;
 } else {
 var role = cljs.core.first.call(null,seq__1512__$1);
-var temp__5825__auto___1579__$2 = cljs.core.get.call(null,fnspec,role);
-if(cljs.core.truth_(temp__5825__auto___1579__$2)){
-var spec_1580 = temp__5825__auto___1579__$2;
+var temp__5823__auto___1579__$2 = cljs.core.get.call(null,fnspec,role);
+if(cljs.core.truth_(temp__5823__auto___1579__$2)){
+var spec_1580 = temp__5823__auto___1579__$2;
 cljs.core.print.call(null,["\n ",cljs.core.name.call(null,role),":"].join(''),cljs.spec.alpha.describe.call(null,spec_1580));
 } else {
 }

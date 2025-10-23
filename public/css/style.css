@@ -17,12 +17,10 @@ body{
 
 main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 92vh;
-    width: 100%;
-    background-color: yellow;
-    
+    width: 100%;  
 }
 
 .corenet-home-navbar-1{
@@ -96,7 +94,7 @@ main{
 }
 
 .corenet-home-box-1{
-    width: 440px;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +107,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 145px;
+
 }
 
 .corenet-home-box-3{
@@ -128,12 +127,61 @@ main{
     font-size: 19px;
 }
 
-.corenet-home-box-2{
-    background-color: brown;
-}
 
 .vertical-line {
   height: 500px;
   border-left: 2px solid var(--default-background-color2);
   
 }
+
+.corenet-home-blogs-conatiner-1{
+    min-width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.corenet-home-div-blog-1{
+    height: 50px;
+    min-width: 50px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    background-color: var(--default-container-color2);
+    color: var(--default-text-color);
+    box-shadow: 5px 3px 2px var(--default-shadow-color);
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px solid black;
+    gap: 20px;
+    padding: 5px;
+    max-width: 220px;
+    cursor: pointer;
+    &&:hover{
+        scale: 101%;
+    }
+    .corenet-home-div-blog-text-1{
+     overflow-y: scroll;
+    }
+}
+
+.corenet-create-form-1{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    
+    gap: 50px;
+    input{
+        height: 50px;
+        width: 350px;
+    }
+   
+}
+.corenet-create-form-container-1{
+        width: 400px;
+}
+ 
