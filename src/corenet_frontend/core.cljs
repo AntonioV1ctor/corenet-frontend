@@ -11,10 +11,10 @@
         (set! (.-innerHTML (.getElementById js/document "display"))
           (apply str
           (map (fn [blog]
-            (str "<div class='corenet-home-div-blog-1'>"
-                 "<h3>" (:titulo blog) "</h3>"
-                 
-                 "</div>"))
+            (str "<form method='get' action='http://localhost:5000/api/v1/blog-id' class='corenet-home-div-blog-1'>"
+                 "<input type='hidden' value='"(:id blog)"' name='id'>"
+                 "<button class='blog-title' type='submit'><h3>"(:titulo blog)"</h3></button>"
+                 "</form>"))
       (:blogs response)))))}))
 
 (render!)

@@ -5,7 +5,7 @@ goog.require('ajax.core');
 corenet_frontend.core.render_BANG_ = (function corenet_frontend$core$render_BANG_(){
 return ajax.core.GET.call(null,"http://localhost:5000/api/v1/all-blogs",new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"response-format","response-format",1664465322),new cljs.core.Keyword(null,"json","json",1279968570),new cljs.core.Keyword(null,"keywords?","keywords?",764949733),true,new cljs.core.Keyword(null,"handler","handler",-195596612),(function (response){
 return (document.getElementById("display").innerHTML = cljs.core.apply.call(null,cljs.core.str,cljs.core.map.call(null,(function (blog){
-return ["<div class='corenet-home-div-blog-1'>","<h3>",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"titulo","titulo",-1497104248).cljs$core$IFn$_invoke$arity$1(blog)),"</h3>","</div>"].join('');
+return ["<form method='get' action='http://localhost:5000/api/v1/blog-id' class='corenet-home-div-blog-1'>","<input type='hidden' value='",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(blog)),"' name='id'>","<button class='blog-title' type='submit'><h3>",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"titulo","titulo",-1497104248).cljs$core$IFn$_invoke$arity$1(blog)),"</h3></button>","</form>"].join('');
 }),new cljs.core.Keyword(null,"blogs","blogs",-1052263917).cljs$core$IFn$_invoke$arity$1(response))));
 })], null));
 });
