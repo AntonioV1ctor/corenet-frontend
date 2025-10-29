@@ -1,0 +1,4 @@
+{:output-dir "public/js/out"
+ :output-to "public/js/main.js"
+ :optimizations :simple
+ :main corenet_frontend.core}
