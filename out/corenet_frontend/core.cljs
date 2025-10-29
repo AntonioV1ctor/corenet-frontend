@@ -28,22 +28,21 @@
 
 
 (defn render-title! []
-  (GET "http://localhost:5000/api/v1/blog-id?id="(get-id)
+  (GET (str "http://localhost:5000/api/v1/blog-id?id=" (get-id))
        {:response-format :json
         :keywords? true
         :handler (fn [response]
                    (set! (.-innerHTML (.getElementById js/document "titulo"))
-                         (apply str (map (fn [blog]
-                                           (str "<h1>" (:titulo blog) "</h1>"))
+                         (apply str (map (fn [blogs]
+                                           (str "<h1>" (:titulo blogs) "</h1>"))
                                          (:blog response)))))}))
 
 
+(when (.getElementById js/document "titulo")
+  (render-title!))
 
+(when (.getElementById js/document "display")
+  (render!))
 
-
-
-(render-title!)
-(render!)
-(set! (.-renderTitle js/window) render-title!)
 ;;(def get-id-byURL (.-search js/location))
 ;;(def filter-id (new js/URLSearchParams get-id-byURL))

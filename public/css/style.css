@@ -48,17 +48,21 @@ main{
     cursor: pointer;
 }
 
-.corenet-blog-title-div-1,.corenet-blog-content-div-1{
+.corenet-blog-title-div-1{
     min-width: 400px;
     max-width: 98%;
     background-color: var(--default-text-color);
     min-height: 50px;
     color: #000000;
-    h1,h3{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    h1{
         display: block; 
         word-wrap: break-word; 
         overflow-wrap: break-word; 
         white-space: normal;
+        font-size: 23px;
     }
 }
 
@@ -66,8 +70,18 @@ main{
 
 .corenet-blog-content-div-1{
     min-height: 300px;
+    min-width: 400px;
+    background-color: var(--default-text-color);
+    padding: 5px;
+    display: flex;
     width: 98%;
     color: #000000;
+    h3{
+        display: block; 
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+        white-space: normal;
+    }
 }
 
 .corenet-home-div-1,.corenet-home-div-2{
@@ -101,7 +115,6 @@ main{
     flex-direction: column;
     text-align: justify;
     padding: 10px;
-    scale: 101%;
 }
 
 .corenet-home-div-navbar-1{
@@ -262,7 +275,7 @@ main{
     font-weight: 100;
 }
 
-#corenet-create-textarea-input-1{
+.corenet-create-textarea-input-1{
     min-width: 350px;
     max-width: 350px;
     min-height: 100px;

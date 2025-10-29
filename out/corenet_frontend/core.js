@@ -16,14 +16,19 @@ return ["<form method='get' action='/public/blog.html' class='corenet-home-div-b
 })], null));
 });
 corenet_frontend.core.render_title_BANG_ = (function corenet_frontend$core$render_title_BANG_(){
-return ajax.core.GET.call(null,"http://localhost:5000/api/v1/blog-id?id=",corenet_frontend.core.get_id.call(null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"response-format","response-format",1664465322),new cljs.core.Keyword(null,"json","json",1279968570),new cljs.core.Keyword(null,"keywords?","keywords?",764949733),true,new cljs.core.Keyword(null,"handler","handler",-195596612),(function (response){
-return (document.getElementById("titulo").innerHTML = cljs.core.apply.call(null,cljs.core.str,cljs.core.map.call(null,(function (blog){
-return ["<h1>",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"titulo","titulo",-1497104248).cljs$core$IFn$_invoke$arity$1(blog)),"</h1>"].join('');
+return ajax.core.GET.call(null,["http://localhost:5000/api/v1/blog-id?id=",cljs.core.str.cljs$core$IFn$_invoke$arity$1(corenet_frontend.core.get_id.call(null))].join(''),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"response-format","response-format",1664465322),new cljs.core.Keyword(null,"json","json",1279968570),new cljs.core.Keyword(null,"keywords?","keywords?",764949733),true,new cljs.core.Keyword(null,"handler","handler",-195596612),(function (response){
+return (document.getElementById("titulo").innerHTML = cljs.core.apply.call(null,cljs.core.str,cljs.core.map.call(null,(function (blogs){
+return ["<h1>",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"titulo","titulo",-1497104248).cljs$core$IFn$_invoke$arity$1(blogs)),"</h1>"].join('');
 }),new cljs.core.Keyword(null,"blog","blog",-302707364).cljs$core$IFn$_invoke$arity$1(response))));
 })], null));
 });
+if(cljs.core.truth_(document.getElementById("titulo"))){
 corenet_frontend.core.render_title_BANG_.call(null);
+} else {
+}
+if(cljs.core.truth_(document.getElementById("display"))){
 corenet_frontend.core.render_BANG_.call(null);
-(window.renderTitle = corenet_frontend.core.render_title_BANG_);
+} else {
+}
 
 //# sourceMappingURL=core.js.map
