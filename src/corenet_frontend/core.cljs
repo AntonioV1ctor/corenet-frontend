@@ -1,3 +1,4 @@
+
 (ns corenet_frontend.core
   (:require 
   [ajax.core :refer [GET POST]]))
@@ -52,8 +53,18 @@
 
 
 (defn create-blog! []
-  (print (.-fetch "https://test.com"))
-)
+  (GET "http://localhost:5000/api/v1/create-post"
+       {:params {:titulo (str (get-form-titulo-value))
+                 :conteudo (str (get-form-conteudo-value))}
+        :handler handler
+        :error-handler erro-handler
+        :response-format :json
+        :keywords? true}))
+
+(defn wait-press-but []
+  (.addEventListener (.getElementById js/document "create-post-button") "click"
+                    (fn [_]
+                      (println "HelloWorld"))))
 
 
 (when (.getElementById js/document "titulo")
@@ -65,8 +76,15 @@
 (when (.getElementById js/document "display")
   (render!))
 
+(when (.getElementById js/document "create-post-button")
+  (wait-press-but))
+
 ;;(def get-id-byURL (.-search js/location))
 ;;(def filter-id (new js/URLSearchParams get-id-byURL))
+
+
+;;(create-blog!)
 ;;(get-form-titulo-value)
 ;;(get-form-conteudo-value)
+
 ;;(.-value titulo)
