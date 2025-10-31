@@ -4,7 +4,7 @@
   [ajax.core :refer [GET POST]]))
 
 
-(def api-url "http://localhost:5000/api/v1")
+(def api-url "https://apicorenet.eu-central-1.arkain.site/api/v1")
 
 
 (defn get-id []
@@ -12,7 +12,7 @@
   (.get param "id"))
 
 (defn render! []
-  (GET "http://localhost:5000/api/v1/all-blogs"
+  (GET "https://apicorenet.eu-central-1.arkain.site/api/v1/all-blogs"
     {:response-format :json
      :keywords? true  
      :handler (fn [response]
@@ -27,7 +27,7 @@
 
 
 (defn render-title! []
-  (GET (str "http://localhost:5000/api/v1/blog-id?id=" (get-id))
+  (GET (str "https://apicorenet.eu-central-1.arkain.site/api/v1/blog-id?id=" (get-id))
        {:response-format :json
         :keywords? true
         :handler (fn [response]
@@ -35,7 +35,7 @@
                         (str "<h1>" (get-in response [:blogs :titulo]) "</h1>")))}))
 
 (defn render-content! []
-  (GET (str "http://localhost:5000/api/v1/blog-id?id=" (get-id))
+  (GET (str "https://apicorenet.eu-central-1.arkain.site/api/v1/blog-id?id=" (get-id))
        {:response-format :json
         :keywords? true
         :handler (fn [response]
@@ -53,7 +53,7 @@
 
 
 (defn create-blog! []
-  (POST (str "http://localhost:5000/api/v1/create-post?titulo="(str (get-form-titulo-value))"&conteudo=" (str (get-form-conteudo-value)))
+  (POST (str "https://apicorenet.eu-central-1.arkain.site/api/v1/create-post?titulo="(str (get-form-titulo-value))"&conteudo=" (str (get-form-conteudo-value)))
        {:response-format :json
         :keywords? true}))
 
