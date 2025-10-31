@@ -32,7 +32,7 @@
         :keywords? true
         :handler (fn [response]
                    (set! (.-innerHTML (.getElementById js/document "titulo"))
-                         (str "<h1>" (get-in response [:blogs :titulo]) "</h1>")))}))
+                        (str "<h1>" (get-in response [:blogs :titulo]) "</h1>")))}))
 
 (defn render-content! []
   (GET (str "http://localhost:5000/api/v1/blog-id?id=" (get-id))
@@ -40,7 +40,7 @@
         :keywords? true
         :handler (fn [response]
                    (set! (.-innerHTML (.getElementById js/document "conteudo"))
-                         (str "<h3>" (get-in response [:blogs :conteudo]) "</h3>")))}))
+                        (str "<h3>" (get-in response [:blogs :conteudo]) "</h3>")))}))
 
 
 (defn get-form-titulo-value []
@@ -53,18 +53,17 @@
 
 
 (defn create-blog! []
-  (GET "http://localhost:5000/api/v1/create-post"
-       {:params {:titulo (str (get-form-titulo-value))
-                 :conteudo (str (get-form-conteudo-value))}
-        :handler handler
-        :error-handler erro-handler
-        :response-format :json
+  (POST (str "http://localhost:5000/api/v1/create-post?titulo="(str (get-form-titulo-value))"&conteudo=" (str (get-form-conteudo-value)))
+       {:response-format :json
         :keywords? true}))
 
+
 (defn wait-press-but []
-  (.addEventListener (.getElementById js/document "create-post-button") "click"
+  (def button (.getElementById js/document "create-post-button"))
+  (.addEventListener button "click"
                     (fn [_]
-                      (println "HelloWorld"))))
+                      (create-blog!)
+                      (println "Post criado com sucesso!"))))
 
 
 (when (.getElementById js/document "titulo")
